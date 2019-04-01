@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_widget">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="24dp"
+        android:text="2016.11.21 (월)"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_widget_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="16sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:text="기장밥
+동태해물탕(5)(6)(8)(9)(13)
+돈육메추리알장조림(1)(5)(6)(10)(13)
+미역줄기볶음(2)(5)(6)(10)
+치즈스틱(1)(2)(6)
+포기김치(9)"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</FrameLayout>

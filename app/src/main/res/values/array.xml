@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_noti_index" translatable="false">
+        <item>50개</item>
+        <item>100개</item>
+    </string-array>
+
+    <string-array name="array_noti_index_value" translatable="false">
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="array_airtool_alpha">
+        <item>100%</item>
+        <item>90%</item>
+        <item>80%</item>
+        <item>70%</item>
+        <item>60%</item>
+        <item>50%</item>
+    </string-array>
+
+    <string-array name="array_airtool_alpha_value">
+        <item>1</item>
+        <item>0.9</item>
+        <item>0.8</item>
+        <item>0.7</item>
+        <item>0.6</item>
+        <item>0.5</item>
+    </string-array>
+
+    <string-array name="array_text_size">
+        <item>매우 크게 (20sp)</item>
+        <item>크게 (18sp)</item>
+        <item>보통 (16sp)</item>
+        <item>작게 (14sp)</item>
+        <item>매우 작게 (12sp)</item>
+    </string-array>
+
+    <string-array name="array_text_size_value">
+        <item>20</item>
+        <item>18</item>
+        <item>16</item>
+        <item>14</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="array_announce_sort">
+        <item>최신순</item>
+        <item>오래된 순</item>
+    </string-array>
+
+    <string-array name="array_change_log" translatable="false">
+        <item>공지사항 기능이 추가되었습니다.</item>
+    </string-array>
+
+</resources>

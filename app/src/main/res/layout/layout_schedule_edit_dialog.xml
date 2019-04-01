@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/dialog_edit_title"
+        android:textColor="@color/colorTextColor"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_edit_text"
+        android:hint="@string/dialog_et_placeholder"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/et_edit_grade"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_edit_grade"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dialog_title" />
+
+    <EditText
+        android:id="@+id/et_edit_grade"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_edit_text"
+        android:gravity="center"
+        android:hint="@string/dialog_et_grade"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        android:nextFocusDown="@+id/et_edit_class"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/et_edit_subject"
+        app:layout_constraintRight_toLeftOf="@+id/et_edit_class"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dialog_title" />
+
+    <EditText
+        android:id="@+id/et_edit_class"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_edit_text"
+        android:gravity="center"
+        android:hint="@string/dialog_et_class"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:nextFocusDown="@+id/et_edit_class"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/et_edit_grade"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dialog_title" />
+
+    <EditText
+        android:id="@+id/et_edit_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_edit_text"
+        android:hint="@string/dialog_et_memo"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_dialog_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_edit_grade" />
+
+    <TextView
+        android:id="@+id/txt_dialog_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:text="@string/confirm"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

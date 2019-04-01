@@ -1,0 +1,5 @@
+<voice-interaction-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:recognitionService="com.RiDsoft.kangwonhighschool.ui.assistant.KPAssistantService"
+    android:sessionService="com.RiDsoft.kangwonhighschool.ui.assistant.KPAssistSessionService"
+    android:supportsAssist="true"/>

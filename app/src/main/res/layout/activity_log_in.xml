@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/img_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_fingerprint_white_48"
+        app:layout_constraintBottom_toTopOf="@+id/txt_login_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_login_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_fingerprint"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pw_input_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_fingerprint" />
+
+
+    <TextView
+        android:id="@+id/txt_pw_input_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/table_pw"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt_pw_input_2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_message" />
+
+    <TextView
+        android:id="@+id/txt_pw_input_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/table_pw"
+        app:layout_constraintLeft_toRightOf="@+id/txt_pw_input_1"
+        app:layout_constraintRight_toLeftOf="@+id/txt_pw_input_3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_message" />
+
+    <TextView
+        android:id="@+id/txt_pw_input_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/table_pw"
+        app:layout_constraintLeft_toRightOf="@+id/txt_pw_input_2"
+        app:layout_constraintRight_toLeftOf="@+id/txt_pw_input_4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_message" />
+
+    <TextView
+        android:id="@+id/txt_pw_input_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/table_pw"
+        app:layout_constraintLeft_toRightOf="@+id/txt_pw_input_3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_message" />
+
+    <TableLayout
+        android:id="@+id/table_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingBottom="24dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt_pw_1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_2"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="2"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_3"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="3"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt_pw_4"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="4"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_5"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="5"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_6"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="6"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt_pw_7"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="7"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_8"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="8"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_9"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="9"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt_pw_erase"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/erase"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_0"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_pw_confirm"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/confirm"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

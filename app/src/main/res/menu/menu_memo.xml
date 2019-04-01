@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_share_memo"
+        android:title="공유"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_edit_memo"
+        android:title="수정"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#e0e0e0</color>
+    <color name="colorAccent">#f95631</color>
+
+    <!--No matters-->
+
+    <color name="refresh_orange">#f95631</color>
+    <color name="refresh_yellow">#ff9800</color>
+    <color name="refresh_green">#009688</color>
+    <color name="refresh_blue_grey">#607d8b</color>
+
+    <color name="colorToolbarBackground">#ffffff</color>
+
+    <color name="colorNotificationNormal">#ffcc80</color>
+    <color name="colorNotificationEmergence">#ffab91</color>
+    <color name="colorNotificationDaily">#b3e5fc</color>
+    <color name="colorNotificationSchedule">#e6ee9c</color>
+    <color name="colorNotificationClass">#90a4ae</color>
+    <color name="colorNotificationGrade">#90a4ae</color>
+
+    <color name="colorTextColor">#000</color>
+    <color name="colorTextColorSecondary">#424242</color>
+    <color name="colorBackground">#ededed</color>
+    <color name="colorViewBackground">#fff</color>
+
+</resources>

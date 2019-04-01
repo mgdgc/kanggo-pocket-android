@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/card_widget_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_lg_sb_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:src="@drawable/ic_assignment_green_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.7"
+                    android:text="시간표"
+                    android:textColor="#009688"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_widget_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0.8"
+                android:text="\n\n\n\n\n\n\n\n\n\n"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_widget_meal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_lg_sb_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:src="@drawable/ic_local_dining_orange_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.7"
+                    android:text="급식"
+                    android:textColor="#ff5722"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_widget_meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:text="\n\n\n\n\n\n\n\n\n\n"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

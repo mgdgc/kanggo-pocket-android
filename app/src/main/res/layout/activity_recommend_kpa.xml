@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="강고 포켓 어시스턴트를 만나보세요!"
+            android:textSize="24dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_kp_assist"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="홈 버튼을 길게 눌러 시간표와 급식 정보는 물론, 다양한 관리 서비스를 받을 수 있습니다.
+\n\n사용하지 않는 구글 나우 온 탭 대신에 강고 포켓 어시스턴트를 이용해 보세요!"
+            android:textColor="#000000"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btn_enable_kpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="강고 포켓 어시스턴트 활성화"/>
+
+    </LinearLayout>
+
+</FrameLayout>

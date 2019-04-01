@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.RiDsoft.kangwonhighschool">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/kanggo"
+        android:largeHeap="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.announce.view.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar"></activity>
+        <activity android:name=".ui.announce.view.ViewActivity" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.minimode.icon.normal"
+            android:resource="@drawable/kanggo_app_icon" />
+        <meta-data
+            android:name="com.sec.minimode.icon.landscapse.normal"
+            android:resource="@drawable/kanggo_app_icon" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_api_key" /> <!-- Widget -->
+        <receiver android:name=".ui.widget.ScheduleAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/schedule_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".ui.StartingActivity"
+            android:label="@string/kanggo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.web.WebDocActivity" />
+        <activity
+            android:name=".ui.main.features.MapActivity"
+            android:label="교실배치도"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.developer.DevModeActivity"
+            android:label="개발자 모드" />
+        <activity android:name=".ui.user.ThanksToActivity" />
+        <activity android:name=".ui.preview.PreviewActivity" />
+        <activity android:name=".ui.web.WebActivity" />
+        <activity
+            android:name=".ui.main.dashboard.MemoDetailActivity"
+            android:label="메모" />
+        <activity
+            android:name=".ui.main.dashboard.MemoWriteActivity"
+            android:label="작성" />
+        <activity
+            android:name=".ui.main.dashboard.MemoEditActivity"
+            android:label="수정" />
+        <activity
+            android:name=".ui.meal.MealActivity"
+            android:label="급식" />
+        <activity
+            android:name=".ui.meal.OtherDayMealActivity"
+            android:label="@string/string_meal" />
+
+        <service android:name=".ui.web.FileDownloadService" />
+
+        <activity android:name=".ui.preview.InitializeActivity" /> <!-- LogInActivity -->
+        <activity android:name=".ui.secure.LogInActivity" /> <!-- schedule -->
+        <activity
+            android:name=".ui.schedule.student.ScheduleActivity"
+            android:label="시간표" />
+        <activity
+            android:name=".ui.schedule.student.OtherScheduleChooseActivity"
+            android:label="다른반 시간표" />
+        <activity android:name=".ui.schedule.ScheduleDownloadActivity" />
+        <activity
+            android:name=".ui.new_schedule.NewScheduleActivity"
+            android:label="@string/label_schedule" />
+        <activity
+            android:name=".ui.schedule.teacher.TeacherScheduleActivity"
+            android:label="@string/teacher_schedule" /> <!-- users -->
+        <activity
+            android:name=".ui.user.StudentInformationActivity"
+            android:label="학생 정보 수집에 관하여" />
+        <activity
+            android:name=".ui.user.EditUserInfoActivity"
+            android:label="학생정보 수정" /> <!-- id -->
+        <activity
+            android:name=".ui.id.StudentIDActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".ui.id.StudentIDCreatorActivity"
+            android:label="학생증 제작기"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- settings -->
+        <activity
+            android:name=".ui.user.settings.SettingActivity"
+            android:label="설정" />
+        <activity
+            android:name=".ui.announce.AnnounceActivity"
+            android:label="공지사항" /> <!-- Google Firebase Messaging Services -->
+        <!-- LG Smart Bulletin -->
+        <receiver android:name=".ui.widget.LGSmartBulletinWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/for_lgwidget_info" />
+        </receiver>
+    </application>
+
+</manifest>

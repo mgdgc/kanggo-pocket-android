@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_kpa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000">
+
+        <LinearLayout
+            android:id="@+id/layout_kpa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="top|start"
+            android:elevation="8dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_kpa_title_bg">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_kp_assist"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="강고 포켓 어시스턴트"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:background="@drawable/shape_kp_assistant_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/card_kpa_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_lg_sb_bg"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:alpha="0.7"
+                            android:src="@drawable/ic_assignment_green_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:alpha="0.7"
+                            android:text="시간표"
+                            android:textColor="#009688"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_kpa_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:alpha="0.8"
+                        android:text="\n\n\n\n\n\n\n\n\n\n"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_kpa_meal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_lg_sb_bg"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:alpha="0.7"
+                            android:src="@drawable/ic_local_dining_orange_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:alpha="0.7"
+                            android:text="급식"
+                            android:textColor="#ff5722"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_kpa_meal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="\n\n\n"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

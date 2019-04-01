@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_fake"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#ffffff"
+            app:theme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="선착순 3명! \n\n이 화면을 찾아낼 만큼 강고 포켓을 열렬히 사용해주신 분들께 드리는 선물!"
+            android:textColor="#000000"
+            android:textSize="24dp"/>
+
+        <ImageView
+            android:id="@+id/img_fake_haha"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:src="@drawable/fake_haha" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

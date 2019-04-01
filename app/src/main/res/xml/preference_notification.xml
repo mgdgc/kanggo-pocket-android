@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:summary="알림 설정과 무관하게, 받은 알림은 \'받은 알림\'에서 볼 수 있습니다." />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_allow_notification"
+        android:title="알림 수신" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="pref_allow_notification"
+        android:key="pref_emergency_notification"
+        android:summary="학교에서 알리는 긴급한 공지를 수신합니다.\n예: 재난 알림, 종례 변경 알림, 일정 변경 알림 등"
+        android:title="긴급 공지 알림" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="pref_allow_notification"
+        android:key="pref_daily_notification"
+        android:summary="학교에서 알리는 생활 공지를 수신합니다.\n예: 행사 알림, 시험 알림, 생활정보 알림 등"
+        android:title="학교 생활 공지 알림" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="pref_allow_notification"
+        android:key="pref_class_announce"
+        android:summary="내가 속한 학급에게만 전송되는 알림 메시지를 수신합니다."
+        android:title="학급 공지"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="pref_allow_notification"
+        android:key="pref_grade_announce"
+        android:summary="내가 속한 학년에게만 전송되는 알림 메시지를 수신합니다."
+        android:title="학년 공지"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="pref_allow_notification"
+        android:key="pref_schedule_update_notification"
+        android:summary="시간표 업데이트 공지를 수신합니다."
+        android:title="시간표 업데이트 알림" />
+
+</PreferenceScreen>

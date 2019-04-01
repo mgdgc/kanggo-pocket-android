@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="notification"
+        android:enabled="true"
+        android:icon="@drawable/round_notifications_24"
+        android:shortcutShortLabel="@string/shortcut_notification"
+        android:shortcutLongLabel="@string/shortcut_notification">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.RiDsoft.kangwonhighschool"
+            android:targetClass="com.RiDsoft.kangwonhighschool.notification.ReceivedNotificationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="schedule"
+        android:enabled="true"
+        android:icon="@drawable/round_assignment_24"
+        android:shortcutShortLabel="@string/shortcut_schedule"
+        android:shortcutLongLabel="@string/shortcut_schedule">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.RiDsoft.kangwonhighschool"
+            android:targetClass="com.RiDsoft.kangwonhighschool.ui.schedule.student.ScheduleActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="meal"
+        android:enabled="true"
+        android:icon="@drawable/round_local_dining_24"
+        android:shortcutShortLabel="@string/shortcut_meal"
+        android:shortcutLongLabel="@string/shortcut_meal">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.RiDsoft.kangwonhighschool"
+            android:targetClass="com.RiDsoft.kangwonhighschool.ui.meal.MealActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="school_map"
+        android:enabled="true"
+        android:icon="@drawable/round_map_24"
+        android:shortcutShortLabel="@string/shortcut_school_map"
+        android:shortcutLongLabel="@string/shortcut_school_map">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.RiDsoft.kangwonhighschool"
+            android:targetClass="com.RiDsoft.kangwonhighschool.ui.main.features.MapActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="web_viewer"
+        android:enabled="true"
+        android:icon="@drawable/round_language_24"
+        android:shortcutShortLabel="@string/shortcut_web_viewer"
+        android:shortcutLongLabel="@string/shortcut_web_viewer">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.RiDsoft.kangwonhighschool"
+            android:targetClass="com.RiDsoft.kangwonhighschool.ui.web.WebActivity" />
+    </shortcut>
+</shortcuts>

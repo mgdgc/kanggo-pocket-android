@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kanggo Pocket</string>
+    <string name="kanggo">Kanggo Pocket</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="on">On</string>
+    <string name="off">off</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="erase">Erase</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="school_intro">School Info</string>
+    <string name="educational_schedule">Daily Schedule</string>
+
+    <string name="kakao_api_key">78699d4d8f9225f3afe8081bb35dd9f7</string>
+
+    <string name="grade_of">(s) grade</string>
+    <string name="class_of">class (s)</string>
+
+    <string name="network_not_available">Network is not available. Please retry after connect to internet.</string>
+    <string name="network_retry">Retry</string>
+
+    <!--PreviewActivity-->
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_message">Before start, we need your basic information.\n\nSwipe to left to begin!</string>
+    <string name="preview_done" translatable="false">Almost done!</string>
+    <string name="preview_done_message" translatable="false">Fill out the following forms and you are ready to go.</string>
+    <string name="preview_confirm_title" translatable="false">Is this correct?</string>
+    <string name="preview_confirm_fail" translatable="false">Please check your information again.</string>
+    <string name="preview_error_not_name" translatable="false">Incorrect name</string>
+    <string name="preview_error_not_number" translatable="false">Incorrect number</string>
+
+    <string name="string_confirm" translatable="false">confirm</string>
+
+    <string name="string_meal" translatable="false">Meal information</string>
+
+    <!--StartingActivity-->
+    <string name="update_lists" translatable="false">Change logs</string>
+
+    <!--MainActivity-->
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_meal">Meal</string>
+    <string name="menu_announcement">Announcements</string>
+    <string name="menu_map">School Map</string>
+    <string name="menu_web">Web Viewer</string>
+    <string name="menu_donation">Donation</string>
+    <string name="options_menu_student_id">Student ID</string>
+    <string name="options_menu_received_notifications">Received Notifications</string>
+    <string name="options_menu_settings">Settings</string>
+
+    <!--App Shortcuts-->
+    <string name="shortcut_notification">Notifications</string>
+    <string name="shortcut_schedule">Schedule</string>
+    <string name="shortcut_meal">Meal Information</string>
+    <string name="shortcut_school_map">School map</string>
+    <string name="shortcut_web_viewer">Kanggo Web Viewer</string>
+
+    <!--InitializeActivity-->
+    <string name="group_notification">School Notifications</string>
+    <string name="group_kanggo_pocket">Kanggo Pocket Notifications</string>
+    <string name="channel_notification">Normal</string>
+    <string name="channel_emergence">Emergence</string>
+    <string name="channel_daily">Daily Inform</string>
+    <string name="channel_schedule_update">Schedule update</string>
+    <string name="channel_class_announce">Class Announce</string>
+    <string name="channel_grade_announce">Grade Announce</string>
+    <string name="channel_memo">Memo</string>
+    <string name="channel_airtool">AirTool</string>
+    <string name="channel_kpa">Kanggo Pocket Assistant</string>
+
+    <string name="channel_notification_description">Normal notification channel sent by school.</string>
+    <string name="channel_emergence_description">Emergent notification channel sent by school.</string>
+    <string name="channel_daily_description">Daily information notification channel sent by school.</string>
+    <string name="channel_schedule_update_description">Schedule updated notification channel sent by developer.</string>
+    <string name="channel_class_announce_description">Class Announcement channel sent by school.</string>
+    <string name="channel_grade_announce_description">Grade Announcement channel sent by school.</string>
+    <string name="channel_memo_description">Notification channel that shows your memo you pinned.</string>
+    <string name="channel_airtool_description">Notification channel that appears when AirTool is running.</string>
+    <string name="channel_kpa_description">Notification channel sent by Kanggo Pocket Assistant.</string>
+
+    <!--MyFirebaseMessagingService-->
+    <string name="notification_type_normal">Normal</string>
+    <string name="notification_type_emergence">Emergency</string>
+    <string name="notification_type_daily">Daily Info</string>
+    <string name="notification_type_schedule">Schedule Update</string>
+    <string name="notification_type_class_announce">Class Announce</string>
+    <string name="notification_type_grade_announce">Grade Announce</string>
+
+    <!--NotificationSettingFragment-->
+    <string name="alert_notification_off">Turn Notification Off</string>
+    <string name="alert_notification_off_msg">If you turn the notification off, you can\'t receive information such as emergency alerts, schedule update notes, school\'s announces, and so on. \n\nAre you sure you want to turn it off?</string>
+    <string name="alert_emergence_off">Turn Emergency Notification Off</string>
+    <string name="alert_emergence_off_msg">If you turn this off, you can\'t receive critical notifications sent by school. \n\nAre you sure you want to turn this off?</string>
+    <string name="alert_class_announce_off">Turn Class Announcement Off</string>
+    <string name="alert_class_announce_off_msg">If you turn this off, you might not be able to receive announcement notification sent by your homeroom teacher. \n\nAre you sure you want to turn this off?</string>
+
+    <!--StudentIDCreatorActivity-->
+    <string name="id_creator_title">Student ID Creator</string>
+    <string name="id_creator_msg">Create your own digital student ID card.\nYou can use e-ID as your library card, meal card, and etc.\n\nAll you have to do is taking photo of your student ID card\'s barcode.</string>
+    <string name="id_creator_warn">Taken pictures will be only used for extracting barcode, and not be transferred or saved in internal/ external server. \nUsing other\'s id without permission is illegal and can be treated as crime.</string>
+    <string name="id_creator_create">Analyze barcode</string>
+    <string name="id_creator_warn_btn">WARNING</string>
+
+    <!--ScheduleActivity-->
+    <string name="label_schedule">Schedule</string>
+
+    <!--EditUserInfoActivity-->
+    <string name="label_collect_user_info">User data policy</string>
+    <string name="placeholder_name">Name</string>
+    <string name="placeholder_number">Number</string>
+    <string name="label_complete">Complete</string>
+    <string name="label_warning">If you click \'Complete\', we will consider that you read and agreed our user information handling policy.</string>
+    <string name="alert_check_info">Incorrect format</string>
+    <string name="alert_enter_name">Please enter your name correctly.</string>
+    <string name="alert_select_grade">Please select your grade.\n(If you\'re position is teacher, select \'I\'m a teacher\'.)</string>
+    <string name="alert_select_class">Please select your class.\n(If you\'re position is teacher, select \'I\'m a teacher\'.)</string>
+    <string name="alert_enter_number">Please enter your number.\n(If you\'re position is teacher, select \'I\'m a teacher\'.)</string>
+    <string name="alert_check">Check Information</string>
+    <string name="alert_check_msg">Please check your information again. Are they correct?\n\n</string>
+    <string name="alert_check_teacher_msg">Please check your information again. Are they correct?\n\n</string>
+    <string name="switch_teacher">I\'m a teacher   </string>
+    <string name="teacher">teacher</string>
+    <string name="grade">grade</string>
+    <string name="classNum">class</string>
+    <string name="number">number</string>
+    <string name="student">student</string>
+    <string name="toast_save_complete">Save completed</string>
+
+    <!--TeacherScheduleAdapter-->
+    <string name="teacher_schedule">Teacher Schedule</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+
+    <!--TeacherScheduleEditDialog-->
+    <string name="dialog_edit_title">Edit Schedule</string>
+    <string name="dialog_et_placeholder">Subject</string>
+    <string name="dialog_et_grade">Grade</string>
+    <string name="dialog_txt_divider">-</string>
+    <string name="dialog_et_class">Class</string>
+    <string name="dialog_et_memo">Memo</string>
+    <string name="dialog_detail">Detail</string>
+    <string name="dialog_subject">Subject</string>
+    <string name="dialog_class">Class</string>
+    <string name="dialog_memo">Memo</string>
+    <string name="dialog_edit">Edit</string>
+    <string name="dialog_edit_message">Would you like to edit or remove the current item?</string>
+
+    <!--LogInActivity-->
+    <string name="login_default">Enter the pass code.</string>
+    <string name="login_fingerprint">Enter the pass code or use fingerprint to log in.</string>
+    <string name="login_wrong_pw">Incorrect pass code.</string>
+    <string name="login_wrong_fingerprint">Incorrect fingerprint.</string>
+    <string name="login_fingerprint_failed">Fingerprint sensor is not available.</string>
+    <string name="login_current_pw">Enter current pass code.</string>
+    <string name="login_new_pw">Enter new pass code.</string>
+    <string name="login_new_pw_again">Enter pass code again.</string>
+    <string name="login_pw_wrong">Incorrect pass code.</string>
+
+    <!--Settings-->
+    <string name="setting_category_security">Security</string>
+    <string name="setting_lock">Application lock</string>
+    <string name="setting_pass_code">Reset pass code</string>
+    <string name="setting_fingerprint">User fingerprint</string>
+
+
+    <!--Trash-->
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/txt_information_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="4dp"
+        android:text="@string/label_collect_user_info"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_edit_user_info_warning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="@string/label_warning"
+        app:layout_constraintBottom_toTopOf="@+id/edit_user_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_information_collect" />
+
+    <EditText
+        android:id="@+id/edit_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/selector_edit_text"
+        android:hint="@string/placeholder_name"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_edit_user_info_warning" />
+
+    <Spinner
+        android:id="@+id/spinner_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spinner_class"
+        app:layout_constraintTop_toBottomOf="@id/edit_user_name" />
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/spinner_grade"
+        app:layout_constraintRight_toLeftOf="@+id/edit_user_number"
+        app:layout_constraintTop_toBottomOf="@id/edit_user_name" />
+
+    <EditText
+        android:id="@+id/edit_user_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_edit_text"
+        android:hint="@string/placeholder_number"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/spinner_class"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_user_name" />
+
+    <Switch
+        android:id="@+id/switch_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/switch_teacher"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_user_number" />
+
+    <Button
+        android:id="@+id/btn_edit_user_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/label_complete"
+        android:textColor="@color/colorTextColor"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_teacher" />
+
+</android.support.constraint.ConstraintLayout>
