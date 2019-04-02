@@ -2,7 +2,7 @@
 
 <img src="app/src/main/res/drawable-xxxhdpi/kanggo_app_icon.png" alt="App icon" width="250px">
 
-    주머니 속 강원고등학교, 강고 포켓
+>   속 강원고등학교, 강고 포켓
     
 - [Google Play](https://play.google.com/store/apps/details?id=com.RiDsoft.kangwonhighschool)
 - [강고 포켓 웹](http://kanggo.xyz)
@@ -18,7 +18,7 @@
 
 학생들의 스마트폰 사용을 기존의 틀 안에서 고정된 시각으로만 바라보는 분들도 있었습니다.
 
-강고 포켓으로 하여금 그 분들의 틀을 깨는 것, 그리고 가능성.
+주머니강고 포켓으로 하여금 그 분들의 틀을 깨는 것, 그리고 가능성.
 
 이것은 제가 이루고자 하는 목적이며, 성취해 나가고 있는 목표입니다.
 
@@ -58,8 +58,8 @@
 (작성중)
 
 
-## 라이센스
-(작성중)
+## 오픈소스 라이센스
+[오픈소스 라이센스](/LICENSE.md)
 
 
 ## 스크린샷
