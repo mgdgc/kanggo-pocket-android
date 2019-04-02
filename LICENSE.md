@@ -96,9 +96,9 @@
     limitations under the License.
 
 ## Android Meal Library
-<https://bitbucket.org/whdghks913/wondanghighschool>
-<https://itmir.tistory.com/486>
-[Bitbucket](https://bitbucket.org/whdghks913/wondanghighschool/src/fb1f8a5543cce34c33d7c9538e0d8a1ce67c6f4f/app/src/main/java/toast/library/meal/?at=master)
+  - <https://bitbucket.org/whdghks913/wondanghighschool>
+  - <https://itmir.tistory.com/486>
+  - [Bitbucket](https://bitbucket.org/whdghks913/wondanghighschool/src/fb1f8a5543cce34c33d7c9538e0d8a1ce67c6f4f/app/src/main/java/toast/library/meal/?at=master)
 
 
 
