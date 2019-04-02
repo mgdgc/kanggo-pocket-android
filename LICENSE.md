@@ -9,6 +9,14 @@
 ## Android Support Library
 <https://developer.android.com/topic/libraries/support-library>
 
+  - support-v4
+  - appcompat-v7
+  - cardview-v7
+  - recyclerview-v7
+  - design
+  - multidex
+  - constraint-layout
+
 ## com.github.chrisbanes:PhotoView
 <https://github.com/chrisbanes/PhotoView>
 
