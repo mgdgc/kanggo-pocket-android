@@ -2,7 +2,7 @@
 
 <img src="app/src/main/res/drawable-xxxhdpi/kanggo_app_icon.png" alt="App icon" width="250px">
 
->   속 강원고등학교, 강고 포켓
+> 주머니 속 강원고등학교, 강고 포켓
     
 - [Google Play](https://play.google.com/store/apps/details?id=com.RiDsoft.kangwonhighschool)
 - [강고 포켓 웹](http://kanggo.xyz)
